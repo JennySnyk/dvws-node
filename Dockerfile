@@ -1,4 +1,4 @@
-FROM nikolaik/python-nodejs:python3.7-nodejs16-slim
+FROM python:alpine3.8
 RUN mkdir /home/dvws-node
 WORKDIR /home/dvws-node
 RUN apt-get update && apt-get install -y git build-essential --no-install-recommends
